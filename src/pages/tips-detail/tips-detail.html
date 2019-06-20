@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title align="center">Abordar vuelo</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-row>
+      <ion-col col-8>
+        <ion-item>
+          <h2>1.	Check-In.</h2>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4 style="background-color: #1494BD">
+        <ion-row>
+          <ion-col col-4></ion-col>
+          <ion-col col-4><ion-icon style="zoom:3.0;" name="pin"></ion-icon></ion-col>
+          <ion-col col-4></ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://respiroviajes.com/wp-content/uploads/2017/06/mi-primer-vuelo.jpg">
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <p>Llegue al Aeropuerto con 3 horas antes a la salida de su vuelos</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="wine" item-start large ></ion-icon>
+      <p>Presente pasaporte y boleto aéreo para ingresar.</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="wine" item-start large ></ion-icon>
+      <p>Acceso solo para pasajeros. Revise las restricciones del equipaje.</p>
+    </ion-item>
+    <ion-item>
+      <button ion-button icon-start clear item-end (click)="nextDetail()">
+        <ion-icon name="navigate"></ion-icon>
+        Leer más
+      </button>
+    </ion-item>
+  </ion-card>
+  <ion-fab left bottom>
+    <button ion-fab (click)="voiceText()" color="dark"><ion-icon name="megaphone"></ion-icon></button>
+  </ion-fab>
+</ion-content>

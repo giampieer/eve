@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title align="center">Abordar vuelo</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+   <ion-card-content>
+     - Los pasajeros que realicen vuelos internacionales deberán contar con pasaporte vigente, cualquiera sea la edad del pasajero, sean niños o incluso recién nacidos.  Debe contar con visa para el país de destino, según requerimiento.  Si los pasajeros son menores de edad y viajan con uno de los padres o sin acompañantes, deberán presentar un permiso notarial.  Consulte con su línea aérea los requisitos de menores de edad y visa.
+     <br>
+     - Si usted realiza su check-in vía web antes de venir al Aeropuerto, podrá ahorrar tiempo en el proceso de check-in.
+     <br>
+     - Respecto al peso máximo permitido para su equipaje facturado, deberá verificar las restricciones con su aerolínea. El exceso de equipaje será cobrado según la política de la aerolínea contratada.
+   </ion-card-content>
+    <ion-item>
+      <button ion-button icon-start clear item-end (click)="nextDetail3()">
+        <ion-icon name="navigate"></ion-icon>
+        Leer más
+      </button>
+    </ion-item>
+  </ion-card>
+  <ion-fab right bottom>
+    <button ion-fab (click)="voiceText()" color="dark"><ion-icon name="megaphone"></ion-icon></button>
+  </ion-fab>
+</ion-content>
