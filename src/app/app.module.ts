@@ -21,6 +21,7 @@ import {TipsDetail2Page} from "../pages/tips-detail2/tips-detail2";
 import {TipsDetail3Page} from "../pages/tips-detail3/tips-detail3";
 import {TipsDetailPage} from "../pages/tips-detail/tips-detail";
 import {TipsDetail4Page} from "../pages/tips-detail4/tips-detail4";
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import {TipsDetail4Page} from "../pages/tips-detail4/tips-detail4";
     StatusBar,
     SplashScreen,
     TextToSpeech,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
